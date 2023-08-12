@@ -9,7 +9,7 @@ import "./App.js";
 function App() {
   const[sat, setSat] = useState(satData);
   //The Set method prevents duplicate elements. We are using it because there are only three types of orbitTypes: Low, Medium, and High. This will eventually create three buttons. If we only used map, we would create 10 buttons, and many of them would be duplicates
-  const displaySats = [... new Set(satData.map((data) => data.orbitType))];
+  const displaySats = [...new Set(satData.map((data) => data.orbitType))];
 
 
   //update the displaySats variable using the filter method.
